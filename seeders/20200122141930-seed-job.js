@@ -58,15 +58,6 @@ module.exports = {
         updatedAt:new Date
       },
       {
-        title:'The Witcher',
-        image:'https://gamespot1.cbsistatic.com/uploads/scale_super/1582/15828986/3606754-witcher%20poster.jpg',
-        id_talent:'4',
-        launch_date:'2019-12-20',
-        is_done:true,
-        createdAt:new Date,
-        updatedAt:new Date
-      },
-      {
         title:'Man of Steel',
         image:'https://images-na.ssl-images-amazon.com/images/I/71j%2BjX%2BnBBL._AC_SY679_.jpg',
         id_talent:'5',
