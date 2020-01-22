@@ -3,6 +3,8 @@ require('express-group-routes')
 const express = require('express')
 //init bodyParser
 const bodyParser = require('body-parser')
+//init cors
+const cors = require('cors')
 //use express in app variable
 const app = express()
 //define the server port
@@ -10,6 +12,7 @@ const port = process.env.PORT || 5000
 
 //allow this app to receive incoming json request
 app.use(bodyParser.json())
+app.use(cors());
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "*");
