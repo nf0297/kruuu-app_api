@@ -1,10 +1,12 @@
 const models = require('../models')
 const job = models.job
+const talent = models.talent
 
 exports.selectAll = (req, res) => {
     job.findAll({
         attributes:["id", "title", "image", "launch_date", "is_done"],
-        include: [{model:talent, as: "Talent", attributes:["id", "fullname", "image"]}]
+        include: 
+        [{model:talent, as: "Talent", attributes:["id", "fullname", "image"]}]
     })
     .then(job => {
         res.send({

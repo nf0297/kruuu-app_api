@@ -1,5 +1,6 @@
 const models = require('../models')
 const talent = models.talent
+const job = models.job
 
 exports.selectAll = (req, res) => {
     talent.findAll({
