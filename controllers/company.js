@@ -5,16 +5,12 @@ exports.selectAll = (req, res) => {
     company.findAll()
     .then(company => {
         res.send({
-            message: "Company Selected Successfully!",
             company,
-            error: false
         })
     })
     .catch(err => {
         res.send({
-            message: "Cannot Select Company! Please fix your code!",
             err,
-            error: true
         })
     })
 }
