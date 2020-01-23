@@ -25,7 +25,13 @@ exports.selectAll = (req, res) => {
 exports.selectByID = (req, res) => {
     const parameter = req.params.id
     company.findOne({
-        where: {id:parameter}
+        where: {id:parameter},
+        include: 
+        [
+            {
+                model:talent, as: "Talent", attributes:["id", "fullname", "image"]
+            }
+        ]
     })
     .then(company => {
         res.send({
