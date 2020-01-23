@@ -17,15 +17,15 @@ module.exports = {
       image: {
         type: Sequelize.TEXT
       },
-      id_company: {
-      type: Sequelize.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'companies',
-        key:'id'
-      },
-      onUpdate: 'cascade',
-      onDelete: 'cascade'
+      id_talent: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'talents',
+          key:'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       createdAt: {
         allowNull: false,
