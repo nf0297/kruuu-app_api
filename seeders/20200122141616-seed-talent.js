@@ -7,7 +7,7 @@ module.exports = {
         fullname: "Aimer",
         occupation:"Singer",
         image: "https://cdnx.natalie.mu/media/pp/static/music/aimer15/photo04.jpg",
-        id_company:"1",
+        id_company:1,
         createdAt: new Date,
         updatedAt: new Date
       },
@@ -15,7 +15,7 @@ module.exports = {
         fullname: "Lee Ji-eun",
         occupation: "Singer",
         image: "https://asset.kompas.com/crops/bw0QAj68dglRsBgxXbWXflA79TM=/82x0:886x536/750x500/data/photo/2018/05/08/1328492635.jpg",
-        id_company:"2",
+        id_company:2,
         createdAt: new Date,
         updatedAt: new Date
       },
@@ -23,7 +23,7 @@ module.exports = {
         fullname: "Chelsea Islan",
         occupation: "Actress",
         image: "https://cdn-brilio-net.akamaized.net/news/2016/08/26/92772/435915-chelsea-islan.jpg",
-        id_company:"3",
+        id_company:3,
         createdAt: new Date,
         updatedAt: new Date
       },
@@ -31,7 +31,7 @@ module.exports = {
         fullname: "Freya Allan",
         occupation: "Actress",
         image: "https://fashionwomentop.com/wp-content/uploads/2019/12/Freya-Allan.jpg",
-        id_company:"1",
+        id_company:1,
         createdAt: new Date,
         updatedAt: new Date
       },
@@ -39,7 +39,7 @@ module.exports = {
         fullname: "Henry Cavill",
         occupation: "Actor",
         image: "https://www.theyoungfolks.com/wp-content/uploads/2011/01/Henry-Cavill.jpg",
-        id_company:"4",
+        id_company:4,
         createdAt: new Date,
         updatedAt: new Date
       }
