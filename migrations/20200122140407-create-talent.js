@@ -17,11 +17,11 @@ module.exports = {
       image: {
         type: Sequelize.TEXT
       },
-      id_talent: {
+      id_company: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: 'talents',
+          model: 'companies',
           key:'id'
         },
         onUpdate: 'cascade',
