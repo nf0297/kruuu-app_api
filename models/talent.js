@@ -3,7 +3,8 @@ module.exports = (sequelize, DataTypes) => {
   const talent = sequelize.define('talent', {
     fullname: DataTypes.TEXT,
     occupation: DataTypes.STRING,
-    image: DataTypes.TEXT
+    image: DataTypes.TEXT,
+    id_company: DataTypes.INTEGER
   }, {});
   talent.associate = function(models) {
     // associations can be defined here
@@ -12,6 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     talent.hasMany(models.job, {
       as: "Job",
       foreignKey: "id_talent"
+    })
+    talent.belongsTo(models.company, {
+      as: "Talent",
+      foreignKey: "id_company"
     })
   };
   return talent;
