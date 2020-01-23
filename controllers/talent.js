@@ -13,7 +13,7 @@ exports.selectAll = (req, res) => {
             },
             {
                 model: job, as:"Job", attributes: ["title", "image", "launch_date", "is_done"]   
-            }
+            },
         ]
     })
     .then(talent => {
