@@ -7,8 +7,14 @@ exports.selectAll = (req, res) => {
     talent.findAll({
         attributes: ["id", "fullname", "occupation", "image"],
         include:
-        [{model: company, as:"Company", attributes: ["name", "image", "location"]}],
-        [{model: job, as:"Job", attributes: ["title", "image", "launch_date", "is_done"]}]
+        [
+            {
+                model: company, as:"Company", attributes: ["name", "image", "location"]
+            },
+            {
+                model: job, as:"Job", attributes: ["title", "image", "launch_date", "is_done"]   
+            }
+        ]
     })
     .then(talent => {
         res.send({
