@@ -1,5 +1,6 @@
 const models = require('../models')
 const company = models.company
+const talent = models.talent
 
 exports.selectAll = (req, res) => {
     company.findAll({
