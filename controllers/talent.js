@@ -38,8 +38,13 @@ exports.selectByID = (req, res) => {
         where: {id:parameter},
         attributes: ["id", "fullname", "occupation", "image"],
         include:
-        [
-            {model: job, as:"Job", attributes: ["title", "image", "launch_date", "is_done"]}
+         [
+            {
+                model: company, as:"Company", attributes: ["name", "image", "location"]
+            },
+            {
+                model: job, as:"Job", attributes: ["title", "image", "launch_date", "is_done"]   
+            },
         ]
     })
     .then(talent => {
