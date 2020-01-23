@@ -17,6 +17,16 @@ module.exports = {
       image: {
         type: Sequelize.TEXT
       },
+      id_company: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'companies',
+        key:'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
