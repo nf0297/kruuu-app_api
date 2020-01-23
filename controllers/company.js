@@ -2,7 +2,14 @@ const models = require('../models')
 const company = models.company
 
 exports.selectAll = (req, res) => {
-    company.findAll()
+    company.findAll({
+        include: 
+        [
+            {
+                model:talent, as: "Talent", attributes:["id", "fullname", "image"]
+            }
+        ]
+    })
     .then(company => {
         res.send({
             company,
